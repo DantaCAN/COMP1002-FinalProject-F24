@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nintendo Game Boy</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #23c3d8;
+            color: #625a5a;
+        }
+        header {
+            background-image: url('bg.jpg'); 
+            background-size: cover; 
+            background-position: center; 
+            color: rgb(245, 251, 244);
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #e21818;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: rgb(238, 236, 236);
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            padding: 10px 15px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            display: inline-block;
+        }
+
+        nav a:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 20px rgba(81, 12, 12, 0.8);
+        }
+
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .content img {
+            border: 2px solid #b44166;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .content img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+        }
+
+        .specialities {
+            text-align: left;
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 10px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .specialities ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .specialities li {
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+        }
+
+        .specialities li img {
+            width: 24px;
+            margin-right: 10px;
+        }
+
+        .buttons {
+            margin-top: 20px;
+        }
+
+        .buttons a {
+            text-decoration: none;
+            background-color: #ed363c;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin: 5px;
+            display: inline-block;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .buttons a:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+            background-color: #c22b30;
+        }
+
+        footer {
+            background-color: #bdafaf;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        /* New Section for a single photo */
+        .photo-section {
+            margin-top: 40px;
+            padding: 40px 20px;
+            background-color: #fff;
+            text-align: center;
+        }
+
+        .photo-section img {
+            width: 100%;
+            max-width: 800px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .photo-section img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 30px rgba(161, 136, 136, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Nintendo Game Boy</h1>
+        <p>The portable gaming revolution of 1989</p>
+    </header> 
+
+    <nav>
+        <a href="games.html">Games</a>
+        <a href="pokemon.html">Pokemon</a>
+        <a href="The-Nintendo-Game.html">The Nintendo Game</a>
+        <a href="Comingsoon.html">Coming Soon</a>
+    </nav> 
+
+    <div class="content"> 
+        <h2>Welcome to the Nintendo Game Boy Website</h2>
+        <p>The Game Boy was a revolutionary handheld gaming console developed by Nintendo, released in Japan on April 21, 1989. It brought gaming on the go to the masses, with iconic titles like <strong>Tetris</strong> and <strong>Pokemon</strong>.</p>
+        <img src="Nintendogame.jpg" alt="NintendoGameBoy" style="width:100%; max-width:600px; margin-top: 20px;">
+        <div class="specialities">
+            <h3>Specialities of Nintendo Game Boy</h3>
+            <ul>
+                <li><img src="switch-batter-logo.jpg" alt="Battery"> Long battery life.</li>
+                <li><img src="images.jpg" alt="Games"> Iconic games that defined an era.</li>
+                <li><img src="images(2).jpg" alt="Durable"> Durable design that stood the test of time.</li>
+            </ul>
+        </div>
+        <div class="buttons">
+            <a href="about.html">About Company</a>
+            <a href="Product.html">Product Page</a>
+            <a href="Content.html">Content Page</a>
+        </div>
+    </div>
+
+    <!-- New Section for a single photo -->
+    <div class="photo-section">
+        <img src="dbg.jpg" alt="Nintendo Game Boy Console">
+    </div>
+
+    <footer>
+        &copy; 2024 Nintendo Game Boy | All Rights Reserved
+    </footer>
+</body>
+</html>
