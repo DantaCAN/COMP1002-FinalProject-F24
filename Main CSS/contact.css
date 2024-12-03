@@ -1,0 +1,93 @@
+body {
+    background-color: #23c3d8;
+    margin: 0px;
+}
+
+main {
+    margin: 8px;
+}
+
+/* The css for the sections */
+section {
+    background-color: white;
+    justify-content: center;
+    width: 41em; 
+    padding: 1rem;
+    margin: auto;
+    margin-bottom: 1em;
+    border: 4px solid lightgrey;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    font-size: 110%;
+}
+
+/* Affects all the text boxes and textarea's */
+input[type=text], textarea {
+    font-family: 'ABeeZee', Arial, Helvetica, sans-serif;
+    width: 96%;
+    padding: 8px 10px;
+    border: 2px solid lightgrey;
+    border-radius: 5px;
+    background-color: rgb(245, 245, 245);
+}
+
+/* Adds a different color border when you click on it */
+input[type=text]:focus, textarea:focus {
+    border: 3px solid #E4000F;
+}
+
+/* Affects just the first name and last name boxes */
+#fname, #lname {
+    max-width: 46%;
+}
+
+/* custom font for the title */
+.title {
+    font-family: 'ABeeZee', Arial, Helvetica, sans-serif;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* custom font for the small text */
+.extraInfo {
+    font-family: 'ABeeZee', Arial, Helvetica, sans-serif;
+}
+
+/* Affects the submit button */
+input[type=submit] {
+    font-family: 'ABeeZee', Arial, Helvetica, sans-serif;
+    width: 9em;
+    padding: 8px 10px;
+    border: 2px solid rgb(180, 227, 255);
+    border-radius: 10px;
+    background-color: rgb(208, 240, 255);
+    cursor: pointer;
+}
+
+/* affects the box itself */
+#boxes {
+    display: flex;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    flex: 1;
+    flex-direction: column;
+}
+
+/* adds detail to the text at the top of the page */
+#topTitle {
+    font-family: 'ABeeZee', Arial, Helvetica, sans-serif;
+    color: rgb(241, 241, 241);
+    font-size: 210%;
+    margin: auto;
+    padding: 1rem;
+    text-align: center;
+    text-shadow: 1px 1px 2px black, 0 0 25px rgb(49, 49, 49), 0 0 5px rgb(179, 179, 179);
+}
+
+/* when the screen gets below a certain length, it shrink the box */
+@media screen and (max-width: 750px) {
+    section {
+        /* width: 0; */
+        max-width: 90%;
+    }
+}
