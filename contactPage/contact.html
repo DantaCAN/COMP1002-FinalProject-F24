@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Description that comes up when people find the website -->
+        <meta name="description" content="Have a problem? Contact us here!">
+
+        <!-- Key words so that people can find it easier -->
+        <meta name="keywords" content="nintendo, gameboy, game, handheld, mario, sonic, advance, pokemon, tetris, zelda, metroid, help, problem, contact, information"> 
+
+        <!-- Title for the website -->
+        <title>Nintendo Contact Page</title>
+
+        <!-- link the css style sheet to the main page -->
+        <link rel="stylesheet" href="../mainCss/contact.css">
+        <link rel="stylesheet" href="../mainCSS/header-footer.css">
+    
+        <!-- link to the global header and footer -->
+        <script src="../JS/header-footer.js" defer></script>
+
+        <!-- Custom fonts -->
+        <link href='https://fonts.googleapis.com/css?family=ABeeZee' rel='stylesheet'>
+        
+    </head>
+    <body>
+        <header id="main-header"></header>
+        <main>
+            <!-- the first line of text -->
+             <h2 id="topTitle">How would you like to contact us?</h2>
+             <br>
+
+             <div id="boxes">
+                <!-- The section for the form -->
+                <section id="formSection">
+                    <!-- Information above the form -->
+                    <h1 class="title">Submit a ticket</h1>
+                    <p class="extraInfo">Send us a ticket so we can get back to you!</p>
+                    <form name="ticket" action="submit.php" method="get" target="_blank">
+                        <!-- first name -->
+                        <input type="text" name="fname" id="fname" placeholder="First name">
+
+                        <!-- last name -->
+                        <input type="text" name="lname" id="lname" placeholder="Last name">
+                        <br><br>
+
+                        <!-- Email -->
+                        <input type="text" name="email" id="email" placeholder="Email">
+                        <br><br> 
+
+                        <!-- Phone number -->
+                        <input type="text" name="phone" id="phone" placeholder="Password">
+                        <br><br>
+
+                        <!-- Problem -->
+                        <textarea rows="3" cols="40" name="problem" id="problem" placeholder="Enter the problem you are experiencing"></textarea>
+
+                        <br><br>
+
+                        <!-- A submit button -->
+                        <input type="submit" name="orderButton" id="subTicket" value="Submit Ticket">
+                    </form>
+                </section>
+                <!-- The section for the phone number -->
+                <section id="phoneSection">
+                    <h1 class="title">Give us a call.</h1> <br>
+                    <h1 class="title">1 (800) 255-3700</h1>
+                </section>
+                <!-- The section where feedback can be left -->
+                <section id="feedbackSection">
+                    <h1 class="title">Leave some feedback on your experience</h1> <br>
+                    <form name="feedback" action="submit.php" method="get" target="_blank">
+                        <!-- Feed back -->
+                        <textarea rows="3" cols="40" name="feedback" id="feedback" placeholder="Enter the Feedback"></textarea>
+
+                        <br><br>
+
+                        <!-- A submit button -->
+                        <input type="submit" name="orderButton" id="subFeedback" value="Send Feedback">
+                    </form>
+                </section>
+            </div>
+        </main>
+
+        <!-- Footer Section -->
+        <footer id="footer-section"></footer>
+    </body>
+</html>
