@@ -1,0 +1,135 @@
+body {
+    margin: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+/* for the background image at the top */
+#bgImage {
+    background-image: url("../Images/repeatGameBoy.png");
+    max-width: 100%;
+    max-height: 15em;
+    padding: 70px;
+}
+
+/* if the screen gets small change the size of the background image */
+@media screen and (max-width: 686px) {
+    #bgImage {
+        max-height: 17em;
+    }
+}
+
+/* for the box containing the slogan */
+#topTitleBox {
+    max-width: 70%;
+    background-color: rgba(0, 0, 0, 0.7);
+    ;
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(71, 71, 71, 0.19);
+    font-size: 110%;
+    /* opacity: 0.5; */
+}
+
+/* for the mission statement */
+#aboutTopTitle {
+    color: white;
+    font-family: 'ABeeZee', Arial, Helvetica, sans-serif;
+}
+
+/* for the box around the about section */
+#aboutSection {
+    padding-top: 20px;
+    padding-bottom: 28px;
+    background-color: #e1ebf3;
+}
+
+/* for the box containing  */
+#aboutUs {
+    max-width: 57em;
+    margin: auto;
+    padding: 24px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    box-shadow: 10px 10px #e4000f, -10px 10px #E4000F;
+    font-family: 'ABeeZee', Arial, Helvetica, sans-serif;
+}
+
+/* Affects the title for the about section */
+.aboutTitle {
+    margin-top: 2px;
+    font-family: 'ABeeZee', Arial, Helvetica, sans-serif;
+    color: #2c2c2c;
+}
+
+/* Affects the text for the about section */
+#aboutText {
+    color: #757575;
+}
+
+/* for the background of the history section */
+#bgHistory {
+    margin: auto;
+    padding: 8px;
+    max-width: 70em;
+}
+
+/* Affects the container for the cards */
+#historyContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-items: stretch;
+    
+    margin-bottom: 1rem;
+}
+
+/* Affects the card */
+.card {
+    flex: 0 0 20%;
+    font-size: 1.5rem;
+    border: 4px solid rgb(240, 240, 240);
+    max-width: 15em;
+    margin: 5px;
+    padding: 0.5em;
+    border-radius: 16px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* add a red shadow when hovering over the cards */
+.card:hover {
+    box-shadow: 0 4px 8px 0 #ee6c75, 0 6px 20px 0 #fa979e;
+}
+
+/* Affects the spot where the image is */
+.header {
+    background: rgb(233, 233, 233);
+    border-radius: 16px;
+    padding: 10px;
+}
+
+/* Affects the date */
+.historyDate {
+    font-family: 'ABeeZee', Arial, Helvetica, sans-serif;
+    color: #2c2c2c;
+    margin-top: 12px;
+    margin-bottom: 0;
+}
+
+/* Affects the description */
+.historyDescription {
+    font-family: 'ABeeZee', Arial, Helvetica, sans-serif;
+    color: #757575;
+    margin-bottom: 0;
+}
