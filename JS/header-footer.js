@@ -11,7 +11,7 @@ mainHeader.innerHTML = `
                 <ul>
                     <li><a href="../Home Page/index.html">Home Page</a></li>
                     <li><a href="../Product Page/ProductPage.html">Product Page</a></li>
-                    <li><a href="../Extra Pages/pokemon.html">About Us</a></li>
+                    <li><a href="../About Page/about.html">About Us</a></li>
                     <li><a href="../Contact Page/contact.html">Contact Us</a></li>
                 </ul>
             </nav> 
